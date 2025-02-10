@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* Global font style */
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }

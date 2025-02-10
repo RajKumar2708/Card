@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaList } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,12 +18,12 @@ const Navbar = () => {
 
       <div className='md:hidden'>
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='text-xl'>
-          {isMenuOpen ? 'Close' : 'Menu'}
+          {isMenuOpen ? 'Close' : <FaList/>}
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className='absolute top-[10vh] right-0 w-[50%] bg-white shadow-lg z-50'>
+        <div className='absolute top-[10vh] right-0 w-[40%] bg-white shadow-lg z-50 p-6 '>
           <div className='flex flex-col items-center'>
             <button className='py-2'>Home</button>
             <button className='py-2'>Blog</button>
