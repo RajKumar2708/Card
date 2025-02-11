@@ -7,46 +7,54 @@ import girl1 from '../assets/girl1.png'
 
 const CardOne = () => {
     return (
-        <div className=' h-[90vh] w-[100%] flex p-6 lg:w-[75%] lg:flex-row relative md:w-screen'>
-            <div className='w-[50%] h-[100%] flex flex-col '>
-                <div className='w-[100%] h-[50%] flex flex-col gap-4'>
-                    <h1 className='text-7xl'>Keep Learning on Track</h1>
-                    <p className='text-md text-gray-600'>Gain access to expertly crafted programs developed by industry-leading teachers. Elevate your skills with structured, high-impact learning designed for success.</p>
-                    <button className='p-3 rounded-tl-md rounded-tr-md rounded-bl-md bg-[#a247fd] w-[20%]'>Get Started</button>
-                </div>
-                <div className='w-[100%] h-[50%] flex gap-4'>
-                    <div className='w-[50%] h-[100%] flex items-center justify-end'>
-                        <div className='w-[85%] h-[55%] rounded-md pl-16 pt-4 bg-[#eeeeef] flex flex-col relative'>
-                            <div className='w-[100%] h-[50%]'>
-                                <h1 className='text-lg '>Best <span className='text-[#a247fd]'>Certified </span>Teacher WorldWide</h1>
-                            </div>
-                            <div className='w-[100%] h-[50%]'>
+        <div className='w-full h-screen flex mb-20  gap-4 lg:w-[75%]'>
+
+            {/* Left Container */}
+            <div className='w-full md:w-[80%] lg:w-[50%] h-full flex flex-col gap-6  sm:mb-10'>
+                <h1 className='text-7xl'>Keep Learning on Track</h1>
+                <p className='text-md text-gray-600'>
+                    Gain access to expertly crafted programs developed by industry-leading teachers. Elevate your skills with structured, high-impact learning designed for success.
+                </p>
+                <button className='p-3 rounded-tl-md rounded-tr-md rounded-bl-md bg-[#a247fd] w-[150px] h-[40px]'>
+                    <p className='text-sm text-white'>Get Started</p>
+                </button>
+
+                <div className='h-[50%]  flex items-center gap-4'>
+                    <div className='w-[50%] h-[100%] flex flex-col relative  items-end lg:h-[55%] md:h-[55%]'>
+                        <div className='w-[78%] h-full pl-10 bg-[#eeeeef] rounded-lg flex flex-col gap-4 items-end'>
+                            <h1 className='text-lg'>Best <span className='text-[#a247fd]'>Certified</span> Teacher WorldWide</h1>
+                            <div className='w-[60%] h-[50%]'>
                                 <h1 className='text-2xl text-[#a247fd]'>210+</h1>
                                 <p className='text-sm'>Experts already joined us</p>
                             </div>
-                            <img className='absolute right-43 bottom-0 h-[100%]' src={woman1}></img>
                         </div>
+                        <img className='absolute left-0 bottom-0 h-full hidden lg:flex md:flex' src={woman1} alt="Woman" />
                     </div>
-                    <div className='w-[50%] h-[100%] flex items-center relative'>
-                        <img src={ctn1}></img>
-                        <img src={img1} className='absolute left-0 top-15'></img>
-                        <div className='absolute bottom-23 w-[80%] px-2'>
-                            <p className='text-sm'>Intercative & Engaging Online Classes - Learn Anytime, Anywhere!</p>
+
+                    <div className='w-[45%] h-[100%] flex items-center relative lg:w-[40%] lg:h-[55%] md:w-[40%] md:h-[55%]'>
+                        <img src={ctn1} className='w-full h-full object-cover' alt="Content" />
+                        <img src={img1} className='absolute w-auto h-auto left-0 top-0' alt="Overlay" />
+                        <div className='absolute w-[90%] top-24 px-2 '>
+                            <p className='text-sm'>Interactive & Engaging Online Classes - Learn Anytime, Anywhere!</p>
                         </div>
-                        <button className='p-2 absolute bg-[#eeeeef] rounded-md top-17 right-15'><img src={btn}></img></button>
+                        <button className='p-2 absolute bg-[#eeeeef] rounded-md top-0 right-0'>
+                            <img src={btn} alt="Button" />
+                        </button>
                     </div>
                 </div>
             </div>
-            
-            <div className='w-[50%] h-[100%] flex flex-col gap-4 pt-4 relative'>
+
+            {/* Right Container for Large Screens (Unchanged) */}
+            <div className='w-[50%] h-full flex-col gap-4 pt-4 relative hidden lg:flex'>
                 <div className='w-[60%] bg-[#a247fd] h-[27%] rounded-lg ml-auto'></div>
                 <div className='w-[50%] bg-[#a247fd] h-[27%] rounded-lg'></div>
-                <div className='w-[100%] bg-[#a247fd] h-[27%] rounded-lg'></div>
-                <img src={girl1} className='absolute bottom-20'></img>
+                <div className='w-full bg-[#a247fd] h-[27%] rounded-lg'></div>
+                <img src={girl1} className='absolute bottom-26' alt="Girl" />
             </div>
+
+
         </div>
-        
     )
 }
 
-export default CardOne
+export default CardOne;
