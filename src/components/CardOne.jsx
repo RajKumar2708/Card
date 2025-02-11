@@ -20,10 +20,10 @@ const CardOne = () => {
                 </button>
 
                 <div className='h-[50%]  flex items-center gap-4'>
-                    <div className='w-[50%] h-[100%] flex flex-col relative  items-end lg:h-[55%] md:h-[55%]'>
+                    <div className='w-[350px] h-[250px] flex flex-col relative  items-end  '>
                         <div className='w-[78%] h-full pl-10 bg-[#eeeeef] rounded-lg flex flex-col gap-4 items-end'>
                             <h1 className='text-lg'>Best <span className='text-[#a247fd]'>Certified</span> Teacher WorldWide</h1>
-                            <div className='w-[60%] h-[50%]'>
+                            <div className='w-[70%] h-[50%] lg:mt-10'>
                                 <h1 className='text-2xl text-[#a247fd]'>210+</h1>
                                 <p className='text-sm'>Experts already joined us</p>
                             </div>
@@ -31,10 +31,10 @@ const CardOne = () => {
                         <img className='absolute left-0 bottom-0 h-full hidden lg:flex md:flex' src={woman1} alt="Woman" />
                     </div>
 
-                    <div className='w-[45%] h-[100%] flex items-center relative lg:w-[40%] lg:h-[55%] md:w-[40%] md:h-[55%]'>
+                    <div className='w-[350px] h-[250px] flex items-center relative'>
                         <img src={ctn1} className='w-full h-full object-cover' alt="Content" />
                         <img src={img1} className='absolute w-auto h-auto left-0 top-0' alt="Overlay" />
-                        <div className='absolute w-[90%] top-24 px-2 '>
+                        <div className='absolute w-[90%] bottom-10 px-2 '>
                             <p className='text-sm'>Interactive & Engaging Online Classes - Learn Anytime, Anywhere!</p>
                         </div>
                         <button className='p-2 absolute bg-[#eeeeef] rounded-md top-0 right-0'>
